@@ -1,6 +1,7 @@
 const tokens = require('./tokens.json')
 const Discord = require('discord.js'),
 client = new Discord.Client()
+require('./bot2')
 var st = "enabled"
 
 client.on("ready", ()=>{
@@ -31,4 +32,4 @@ ch.send("**discord.gg/pornhub SPAM MESAJI @everyone**")}
     
 })
 
-client.login(tokens.engine1).catch(console.error)
+client.login(tokens.engine).catch(console.error)
