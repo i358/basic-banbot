@@ -1,12 +1,12 @@
 const tokens = require('./tokens.json')
 const Discord = require('discord.js'),
 client = new Discord.Client()
-require('./bot2')
+
 var st = "disabled"
 
 client.on("ready", ()=>{
     
-    console.log("Hazırım birader (ENGINE 1) ", client.user.tag)
+    console.log("Hazırım birader (ENGINE 2) ", client.user.tag)
 })
 
 client.on("message", (message)=>{
@@ -32,4 +32,4 @@ ch.send("**discord.gg/pornhub SPAM MESAJI @everyone**")}
     
 })
 
-client.login(tokens.engine).catch(console.error)
+client.login(tokens.engine2).catch(console.error)
